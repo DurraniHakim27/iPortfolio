@@ -1,20 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Internship: Hydrogen Electrolyzer Optimization</title>
-  <meta content="My internship project on PEM electrolyzer optimization" name="description">
-  <meta content="internship, hydrogen, PEM, electrolyzer" name="keywords">
+  <title>ThermoVision Project: Giving a Robot Tesla-like Vision</title>
+  <meta content="ThermoVision: an autonomous robot with Tesla-like monocular depth estimation, navigation, and plant monitoring" name="description">
+  <meta content="robotics, AI, YOLO, SCDepth, Raspberry Pi 5, Hailo-8, EWMA, navigation, MQTT, ESP32, MLX90614" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/icons8-portfolio-16.png" rel="icon">
   <link href="assets/img/icons8-portfolio-64.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700|Poppins:300,400,600,700" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -51,7 +50,6 @@
           <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          
         </ul>
       </nav>
     </div>
@@ -62,359 +60,177 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Internship</h2>
+          <h2>ThermoVision Project</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Hydrogen Electrolyzer Internship</li>
+            <li>Autonomous Navigation Robot with Temperature Control</li>
           </ol>
         </div>
       </div>
     </section>
-    <!-- ======= Consortium & Funding ======= -->
-<section id="consortium" class="consortium bg-light py-5" data-aos="fade-up">
-  <div class="container text-center">
-    <h2 class="section-title">CO2InnO Consortium & Funding</h2>
-    <p class="mb-4">
-      This project is part of the INTERREG Upper Rhine CO₂InnO real-laboratory, co-financed by Interreg Oberrhein | Rhin Supérieur under the European Regional Development Fund (ERDF)(€2,556,522)<sup><a href="#fn1">1</a></sup>
-    </p>
-    <div class="row justify-content-center align-items-center mb-4 logos-grid">
-      <!-- Example logo items; swap src with your asset paths -->
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/interreg.png" alt="Interreg Oberrhein" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/unifreiburg.png" alt="University of Freiburg" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/kit.png" alt="KIT" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/hka.png" alt="HKA" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/kehl.png" alt="Hochschule Kehl" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/stadtoffenburg.png" alt="Stadt Offenburg" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/badenova.png" alt="badenova" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/alsace.png" alt="Collectivité européenne d’Alsace" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/unihautealsace.png" alt="UHA IRIMAS" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/trion.png" alt="TRION-Climate e.V." class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/klima.png" alt="Klimapartner Oberrhein" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/unistrassbourg.png" alt="Université de Strasbourg" class="img-fluid" /></div>
-      <div class="col-6 col-md-2 mb-3"><img src="gambar/Internship/5-Fraunhofer_ICT.png" alt="Fraunhofer ICT" class="img-fluid" /></div>
-    </div>
-    <p class="small text-muted">
-      Coordinated by Albert-Ludwigs-Universität Freiburg, in cooperation with KIT (Karlsruher Institut für Technologie), Hochschule Karlsruhe (HKA), Hochschule Kehl, Stadt Offenburg, Université de Haute-Alsace (IRIMAS), Trion-Climate e.V., Klimapartner Oberrhein, Université de Strasbourg, Universität Freiburg, and supported by Fraunhofer ICT .
-    </p>
-  </div>
-</section>
 
-
-    <!-- Portfolio Details Section -->
+    <!-- Project Overview -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper" data-aos="fade-up">
-              
-                <div class="swiper-slide">
-                  <img src="gambar/Internship/co2inn0.JPEG" alt="Electrolyzer Setup">
-                  <center><i>Project Poster </i></center>
-                </div>
-                
-              
-             
-            </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-14">
+            <div class="portfolio-info">
               <h3>Project Information</h3>
               <ul>
-                <li><strong>Duration</strong>: May 2024 &ndash; Dec 2024</li>
-                <li><strong>Location</strong>: Karlsruhe, Deutschland</li>
-               
-                <li><strong>Supervisor</strong>: Prof. Dr.-Ing. Maurice Kettner</li>
-                <li><strong>Tech</strong>: Siemens PLC, Tia Portal, Bronkhorst MFC, Python, Excel</li>
-                <li><strong>PDF</strong>: <br><br> 
-                  <div class="content-resume">
-        
-                  <a href="SIIP_Report_Durrani_Hakim (1).pdf">Download Full Report</a>
+                <li><strong>Duration</strong>: Jan 2025 – Aug 2025</li>
+                <li><strong>Location</strong>: Malaysia</li>
+                <li><strong>Tech</strong>: Raspberry Pi 5, Hailo-8, YOLO, SCDepth, EWMA, ESP32, MQTT, MLX90614</li>
+                <li><strong>PDF</strong>: <div class="content-resume">
+ 
+                  <a href="ISDP (3).pdf" class="btn btn-outline-dark mt-3" target="_blank">Technical Paper</a>
+                </div></li>
+                <li><b>Code & GitHub Repository</b>: <div class="content-resume">
+ 
+                  <a href="https://github.com/DurraniHakim27/Autonomous-Navigation-IoT-Robot-with-Vision-Thermal-Sensing-and-Control" class="btn btn-outline-dark mt-3" target="_blank">View on GitHub</a>
                 </div></li>
               </ul>
             </div>
           </div>
+         <br><br><p></p>
+          <div class="row">
+            <!-- Left side: Image -->
+            <div class="col-lg-6">
+              <img src="gambar/ThermoVision/face.jpg" alt="ThermoVision robot" class="img-fluid">
+              <center><i>ThermoVision prototype robot</i></center>
+            </div>
+          
+            <!-- Right side: YouTube video -->
+            <div class="col-lg-6">
+              <b>YouTube Demo</b>:
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/31H6UEh_g4s?si=yLtYqfunngyStD1h" title="ThermoVision Demo" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          
 
-          <div class="col-lg-12 portfolio-description" data-aos="fade-up" data-aos-delay="200">
-            <h2>Project Overview</h2>
+          <div class="col-lg-12 portfolio-description">
+            <h2>The Goal</h2>
             <p>
-              Optimized a Proton Exchange Membrane (PEM) electrolyzer to improve hydrogen production efficiency under variable power inputs. Analyzed Faraday efficiency, voltage efficiency, and overall cell efficiency, then proposed control and design improvements for sustainable energy applications.
+              When we first started our project, the idea was simple but ambitious: create a robot that could move around on its own, sense its environment, and interact with it intelligently all by using only a single monocular camera. Unlike remote-controlled bots, this one needed to be autonomous, able to navigate toward objects as checkpoints, locate an industrial plant, and even monitor the plant temperature conditions in real time.
+            </p>
+            <p>
+              To achieve that, the robot had to answer two fundamental questions: <b>what is around me</b> and <b>how far away is it</b>. These are the same questions Tesla cars ask when they drive down the road, and we wanted to give our little robot that same kind of vision.
+            </p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/MainIdea.png" alt="YOLO Detection" class="img-fluid rounded">
+                <center><i>The ISM represents robot which will locate each checkpoint and towards the final target.</i></center>
+              </div>
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/Frontview.png" alt="Depth Estimation" class="img-fluid rounded">
+                <center><i>Front view of the robot. A single monocular Pi Camera (left) handles vision and navigation, while the thermal sensor (right) detects heat from distance.</i></center>
+              </div>
+            </div>
+            <p></p>
+            <P></P>
+            <h2>Depth Estimation: Seeing the World in 3D</h2>
+            <p>
+              We used a Raspberry Pi 5 paired with a <b>Hailo-8 AI accelerator (26 TOPS)</b> as ThermoVision’s brain. The Hailo chip was essential. Without it, YOLO ran at only 7 frames per second and SCDepth could not run at all. With the accelerator, both models ran smoothly in parallel.
+            </p>
+            <ul>
+              <li><b>YOLO</b> detected objects: sphere, cylinder, cuboid, cone, and the “plant” (represented by a Maggi Hotcup).</li>
+              <li><b>SCDepth</b> estimated the distance to those objects using a single camera frame.</li>
+            </ul>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/yolo.png" alt="YOLO Detection" class="img-fluid rounded">
+                <center><i>YOLO Detection</i></center>
+              </div>
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/depth.png" alt="Depth Estimation" class="img-fluid rounded">
+                <center><i>ScDepthV3 Estimation</i></center>
+              </div>
+            </div>
+            
+            
+            
+            <p>
+              This approach is similar to Tesla’s monocular vision system. Instead of expensive sensors like LiDAR, ThermoVision relied on AI to create a sense of depth. But of course, TeslaVision is much much more advanced tech. 
+            </p>
+            <div class="col-lg-8">
+              <img src="gambar/ThermoVision/yoloscdepth.png" alt="ThermoVision robot" class="img-fluid">
+              <center><i>Running both YOLO and SCDepthV3 in parralel</i></center>
+            </div>
+
+           <p></p>
+            <h2>The Flicker Problem</h2>
+            <p>
+              Here is the disadvantage of Ai depth estimation, the depth numbers flickered. A cone at 26cm could read 25cm the next frame and 29cm the frame after. This cause ThermoVision would inch forward, stop abruptly, then creep again. Watching it reminded me of someone learning to drive stick for the first time, lots of jerks and pauses. 
             </p>
 
-            <h2>Responsibilities</h2>
+            <p>The solution wasn’t just about running bigger models or collecting more data. The raw output needed stability. There is a simple but powerful idea from signal processing: <b>Exponentially Weighted Moving Average (EWMA)</b> filter. EWMA smoothed the depth readings, giving more weight to recent values. The effect was immediate. The numbers steadied, and ThermoVision’s movements became smooth and confident.</p>
+             <div class="col-lg-8">
+            <img src="gambar/ThermoVision/ewma.png" alt="ThermoVision robot" class="img-fluid">
+            <center><i>Blue line represents the flicker/jitter value of the depth estimation, while the orange line is the smoothed value by EWMA</i></center>
+            </div>
+
+
+            <h2>From Vision to Navigation</h2>
+            <p>
+              With stable depth, the next challenge was navigation. ThermoVision used a simple but effective strategy:
+            </p>
             <ul>
-              <li>Designed P&ID and piping layout for water, cooling, and gas handling.</li>
-              <li>Programmed Siemens S7-1200 PLC using TIA Portal for valve/pump control and data logging.</li>
-              <li>Integrated Bronkhorst mass flow meters via Modbus for real-time H<sub>2</sub> flow measurement.</li>
-              <li>Collected data in Excel and automated analysis in Python (Pandas/Matplotlib).</li>
-              <li>Conducted experiments from 20% to 100% power levels to generate performance maps.</li>
+              <li>When the robot is not detecting the target object, it will rotate clockwise or counter-clockwise to scan surroundings.</li>
+              <li>Once the desired target is in the frame, the robot will align itself so the detected object is at the center of the frame.</li>
+              <li>Move forward, adjusting with hysteresis to avoid oversteer.</li>
+              <li>Stop when distance is less than ~23 cm.</li>
             </ul>
 
-            <section id="technical-deep-dive" class="technical-deep-dive py-5">
-              <div class="container">
-            
-                <!-- 1. System Overview -->
-                <h2>Technical Deep Dive</h2>
-                <h3>System Overview</h3>
-                <p>
-                  The PEM electrolyzer setup includes a deionized water supply, KO pots, a Siemens S7-1200 PLC for control, and a hydrogen gas outlet system. A rectifier supplies DC to the membrane stack, converting AC input into regulated voltage and current.
-                </p>
-                <div class="row mb-5">
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Overall mechanism.png" class="card-img-top" alt="Water supply setup">
-                      <div class="card-body"><p class="card-text text-center">Overall mechanism</p></div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Rectifier.png" class="card-img-top" alt="KO pots">
-                      <div class="card-body"><p class="card-text text-center">Rectifier that converts AC supply to DC</p></div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Tia Portal.png" class="card-img-top" alt="PLC & Rectifier">
-                      <div class="card-body"><p class="card-text text-center">Tia Portal</p></div>
-                    </div>
-                  </div>
-                </div>
-            
-                <!-- 2. Control & Instrumentation -->
-                <h3>Control & Instrumentation</h3>
-                <p>
-                  Siemens PLC integrates solenoid valves, water level sensors, pumps, and a Modbus-connected power meter. Hydrogen production is measured with a Bronkhorst El-Flow Prestige FG-201CV mass flow meter. FlowSuite 2 software logs real-time hydrogen data, while safety mechanisms prevent hydrogen or water backflow.
-                </p>
-                <div class="row mb-5">
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Bronkhorst.png" class="card-img-top" alt="Solenoid valves">
-                      <div class="card-body"><p class="card-text text-center">Bronkhorst flowSuite</p></div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/power meter wm271.png" class="card-img-top" alt="Mass flow meter">
-                      <div class="card-body"><p class="card-text text-center">Power meter WM271</p></div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/55%.png" class="card-img-top" alt="HMI software">
-                      <div class="card-body"><p class="card-text text-center">test run at random power level</p></div>
-                    </div>
-                  </div>
-                </div>
-            
-                <!-- 3. Experiment Design -->
-                <h3>Experiment Design</h3>
-                <p>
-                  Power input varied from 20% to 100% in 5% steps. Data collected included current, voltage, hydrogen flow, temperature, and pressure. Performance metrics like Faraday efficiency, voltage efficiency, and cell efficiency were computed.
-                </p>
-                <div class="row mb-5">
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Monitor.jpg" class="card-img-top" alt="Power controller settings">
-                      <div class="card-body"><p class="card-text text-center">Monitoring all the important parameters</p></div>
-                    </div>
-                  </div>
-                  
-                </div>
-            
-                <!-- 4. Analysis & Modeling -->
-                <h3>Analysis & Modeling</h3>
-                <p>
-                  Python scripts (Pandas, Matplotlib) were used to automate analysis and generate graphs. Tafel plots were constructed to derive exchange current density and activation energy. The system achieved best efficiency around 25% power input.
-                </p>
-                <div class="row mb-5">
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Python.png" class="card-img-top" alt="Python code">
-                      <div class="card-body"><p class="card-text text-center">Visualizing data using Pandas and Matplotlib</p></div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Tafel.png" class="card-img-top" alt="Tafel plot">
-                      <div class="card-body"><p class="card-text text-center">Generated Tafel plot</p></div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 mb-4">
-                    <div class="card">
-                      <img src="gambar/Internship/Technical/Overall result.png" class="card-img-top" alt="Efficiency map">
-                      <div class="card-body"><p class="card-text text-center">Overall efficiency comparison</p></div>
-                    </div>
-                  </div>
-                </div>
-            
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/ANCircuit.png" alt="YOLO Detection" class="img-fluid rounded">
+                <center><i>two motor driver (tb6612fng) used two drive four mecanum wheels</i></center>
               </div>
-            </section>
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/CircuitANreal.jpg" alt="Depth Estimation" class="img-fluid rounded">
+                <center><i>Implemented Circuit with 2S 18650 Battery</i></center>
+              </div>
+            </div>
+            <p></p>
+
+            <h2>Plant Temperature  Monitoring</h2>
+            <p>
+              The final checkpoint was the “plant.” ThermoVision used an <b>MLX90614 infrared sensor</b> to measure temperature without contact. The onboard ESP32 sent this data via MQTT to another ESP32 at the plant control station. If the temperature was above threshold, a cooling fan activated. Once below the threshold, the fan turned off and ThermoVision retraced its journey in reverse order.
+            </p>
             
-            <h2>Software & Code</h2>
-<div class="content-resume">
+            
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/PLantcircuit.png" alt="YOLO Detection" class="img-fluid rounded">
+                <center><i>Schematics of the Plant Control</i></center>
+              </div>
+              <div class="col-md-6">
+                <img src="gambar/ThermoVision/ImplementedCircuit.png" alt="Depth Estimation" class="img-fluid rounded">
+                <center><i>Implemented Circuit</i></center>
+              </div>
+            </div>
+            <p></p>
+            
+            <h2>Report and Appendix</h2>
+            <ul>
+              
+             
+              <li><b>Technical Paper (PDF)</b>: <div class="content-resume">
  
-  <a href="https://github.com/DurraniHakim27/Electrolyzer-code.git" class="btn btn-outline-dark mt-3" target="_blank">View on GitHub</a>
-</div>
+                <a href="ISDP (3).pdf" class="btn btn-outline-dark mt-3" target="_blank">Technical Paper</a>
+              </div></li>
+              <li><b>Code & GitHub Repository</b>: <div class="content-resume">
+ 
+                <a href="https://github.com/DurraniHakim27/Autonomous-Navigation-IoT-Robot-with-Vision-Thermal-Sensing-and-Control" class="btn btn-outline-dark mt-3" target="_blank">View on GitHub</a>
+              </div></li>
+            </ul>
 
-
-<section id="internship-gallery" class="internship-gallery py-5">
-  <div class="container">
-    <h2 class="section-title text-center">Internship Gallery</h2>
-    <div class="row">
-      <!-- 1. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/role of my project.jpg" class="card-img-top" alt="Role of my project">
-          <div class="card-body">
-            <p class="card-text text-center">
-              This project is part of the broader transition to a green hydrogen economy, where electricity from renewable sources (e.g. PV arrays, wind turbines) is first converted to direct current, then fed into a PEM electrolyzer to split water into hydrogen and oxygen. The clean hydrogen is stored under pressure and can later be reconverted to electricity via fuel cells.  
-            
-            </p>
           </div>
         </div>
       </div>
-      <!-- 2. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/Electrical.jpg" class="card-img-top" alt="Electrical part of the Electrolyzer">
-          <div class="card-body">
-            <p class="card-text text-center">Electrical part of the Electrolyzer</p>
-          </div>
-        </div>
-      </div>
-      <!-- 3. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/Monitored value.jpg" class="card-img-top" alt="Monitored important value">
-          <div class="card-body">
-            <p class="card-text text-center">Monitored important value</p>
-          </div>
-        </div>
-      </div>
-      <!-- 4. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/mechanical part.jpg" class="card-img-top" alt="Mechanical part of the electrolyzer">
-          <div class="card-body">
-            <p class="card-text text-center">Mechanical part of the electrolyzer</p>
-          </div>
-        </div>
-      </div>
-      <!-- 5. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/Building the pipe connection for the mass flow meter.jpg" class="card-img-top" alt="Pipe connection for mass flow meter">
-          <div class="card-body">
-            <p class="card-text text-center">Building the pipe connection for the mass flow meter</p>
-          </div>
-        </div>
-      </div>
-      <!-- 6. Video -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <video controls class="card-img-top">
-            <source src="gambar/Internship/Gallery/First test of the mass flow meter.mp4" type="video/mp4">
-            Your browser doesn’t support embedded videos.
-          </video>
-          <div class="card-body">
-            <p class="card-text text-center">First test of the mass flow meter</p>
-          </div>
-        </div>
-      </div>
-      <!-- 7. Video -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <video controls class="card-img-top">
-            <source src="gambar/Internship/Gallery/water leak found.mp4" type="video/mp4">
-            Your browser doesn’t support embedded videos.
-          </video>
-          <div class="card-body">
-            <p class="card-text text-center">Water leaking out at 60% power level</p>
-          </div>
-        </div>
-      </div>
-      <!-- 8. Video -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <video controls class="card-img-top">
-            <source src="gambar/Internship/Gallery/taking out ko pots.mp4" type="video/mp4">
-            Your browser doesn’t support embedded videos.
-          </video>
-          <div class="card-body">
-            <p class="card-text text-center">Taking out the Hydrogen KO Pots to troubleshoot</p>
-          </div>
-        </div>
-      </div>
-      <!-- 9. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/the whole part of Hydrogen KO Pots.jpg" class="card-img-top" alt="Full view of H₂ KO Pots">
-          <div class="card-body">
-            <p class="card-text text-center">The whole part of the H₂ KO Pots</p>
-          </div>
-        </div>
-      </div>
-      <!-- 10. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/apparently.jpg" class="card-img-top" alt="Cross section of H₂ KO Pots">
-          <div class="card-body">
-            <p class="card-text text-center">Cross section of the H₂ KO Pots, requires constant pressure to prevent leaks</p>
-          </div>
-        </div>
-      </div>
-      <!-- 11. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/very similar to oil saperation.jpg" class="card-img-top" alt="Oil separation concept">
-          <div class="card-body">
-            <p class="card-text text-center">This concept is very similar to oil separation technique</p>
-          </div>
-        </div>
-      </div>
-      <!-- 12. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/pressure of ko pots.jpg" class="card-img-top" alt="Back-pressure regulator">
-          <div class="card-body">
-            <p class="card-text text-center">Back-pressure regulator used to maintain 5 bar in H₂ KO Pots</p>
-          </div>
-        </div>
-      </div>
-      <!-- 13. Video -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <video controls class="card-img-top">
-            <source src="gambar/Internship/Gallery/use back pressure regulator as water leaking out.mp4" type="video/mp4">
-            Your browser doesn’t support embedded videos.
-          </video>
-          <div class="card-body">
-            <p class="card-text text-center">Water stops leaking out after using back-pressure regulator</p>
-          </div>
-        </div>
-      </div>
-      <!-- 14. Image -->
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="gambar/Internship/Gallery/mass flow meter setup.jpg" class="card-img-top" alt="Mass flow meter setup">
-          <div class="card-body">
-            <p class="card-text text-center">Mass flow meter setup to measure H₂ production</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-            
-
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="footnotes">
-      <p id="fn1"><sup>1</sup><a href=" https://www.dfiu.kit.edu/english/258_831.php"> https://www.dfiu.kit.edu/english/258_831.php</a></p>
     </section>
   </main>
 
@@ -422,17 +238,12 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
 
