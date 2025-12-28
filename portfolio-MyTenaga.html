@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MyTenaga Project: Smart Energy Monitoring System</title>
+  <meta content="MyTenaga: IoT-based energy monitoring system with TNB billing calculations and ML-powered predictions" name="description">
+  <meta content="IoT, Firebase, ESP32, PZEM-004T, energy monitoring, TNB billing, XGBoost, machine learning, smart home" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/icons8-portfolio-16.png" rel="icon">
+  <link href="assets/img/icons8-portfolio-64.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700|Poppins:300,400,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .toc-link:hover {
+      background-color: rgba(20, 157, 221, 0.1) !important;
+      color: #149ddd !important;
+      transform: translateX(5px);
+    }
+    .toc-link:hover i {
+      color: #149ddd !important;
+    }
+    .toc-link i {
+      font-size: 1.1em;
+      transition: all 0.3s;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Mobile nav toggle button -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile text-center">
+        <img src="gambar/GambarDP.jpg" alt="Durrani Hakim" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Durrani Hakim</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://facebook.com/..." class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://instagram.com/..." class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://linkedin.com/in/..." class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Breadcrumbs -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>MyTenaga Project</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Smart Energy Monitoring System</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-14">
+            <div class="text-center mb-4">
+              <img src="gambar/MyTenaga/Mytenaga_logo full.png" alt="MyTenaga Logo" class="img-fluid" style="max-width: 300px;">
+            </div>
+            <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Duration</strong>: May 2025 - December 2025</li>
+                <li><strong>Location</strong>: Malaysia</li>
+                <li><strong>Tech</strong>: ESP32, PZEM-004T, Firebase, Cloud Functions, XGBoost, TypeScript, JavaScript</li>
+                <li><strong>GitHub</strong>: <div class="content-resume">
+                  <a href="https://github.com/DurraniHakim27/mitenaga" class="btn btn-outline-dark mt-3" target="_blank">View on GitHub</a>
+                </div></li>
+                <li><strong>Technical Paper</strong>: <div class="content-resume">
+                  <a href="Technical_Paper_MyTenaga.pdf" class="btn btn-outline-dark mt-3" target="_blank">Technical Paper</a>
+                </div></li>
+                <li><strong>Full Report</strong>: <div class="content-resume">
+                  <a href="Full_Report_MyTenaga.pdf" class="btn btn-outline-dark mt-3" target="_blank">Full Report</a>
+                </div></li>
+                <li><strong>ML Model Development (Colab)</strong>: <div class="content-resume">
+                  <a href="https://colab.research.google.com/drive/1YmDAh4t41EJPN_TqlHUYzYcVrZn31Rz6?usp=sharing" class="btn btn-outline-dark mt-3" target="_blank">View on Google Colab</a>
+                </div></li>
+              </ul>
+            </div>
+          </div>
+         <br><br><p></p>
+
+          <!-- Table of Contents -->
+          <div class="col-lg-12 mb-5">
+            <div class="card" style="background: #fff; border: 1px solid #eee; border-radius: 15px; box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);">
+              <div class="card-body p-4">
+                <h3 class="mb-4" style="font-weight: 700; font-size: 22px; padding-bottom: 20px; border-bottom: 2px solid #149ddd; color: #272829;">
+                  <i class="bi bi-list-ul me-2" style="color: #149ddd;"></i>Table of Contents
+                </h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="toc-list" style="list-style: none; padding: 0;">
+                      <li class="mb-2">
+                        <a href="#overview" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-house-door me-2" style="color: #149ddd;"></i>Overview
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#big-idea" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-lightbulb me-2" style="color: #149ddd;"></i>The Big Idea
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#distribution-board" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-cpu me-2" style="color: #149ddd;"></i>Instrumenting the DB
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#esp32-gateway" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-router me-2" style="color: #149ddd;"></i>ESP32 + UPS Gateway
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#cloud-backend" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-cloud me-2" style="color: #149ddd;"></i>Cloud Backend
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="toc-list" style="list-style: none; padding: 0;">
+                      <li class="mb-2">
+                        <a href="#dashboard" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-graph-up me-2" style="color: #149ddd;"></i>The Dashboard
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#xgboost" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-diagram-3 me-2" style="color: #149ddd;"></i>XGBoost Forecasting
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#smart-alerts" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-bell me-2" style="color: #149ddd;"></i>Smart Alerts
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#closing" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-chat-quote me-2" style="color: #149ddd;"></i>Closing Thoughts
+                        </a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#resources" class="toc-link" style="text-decoration: none; display: flex; align-items: center; padding: 10px 15px; border-radius: 8px; transition: all 0.3s; color: #272829;">
+                          <i class="bi bi-folder me-2" style="color: #149ddd;"></i>Project Resources
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 portfolio-description">
+            <h2 id="overview">MyTenaga – Turning the Home DB into a Smart Energy Dashboard</h2>
+            <p>
+              For most people, the electricity bill is just a number that appears once a month. You see RM something, you sigh a bit, and you pay it. But you don't really know:
+            </p>
+            <ul>
+              <li>Which room is actually eating the most energy?</li>
+              <li>How much are the air-conds really costing every month?</li>
+              <li>If I keep using electricity like this, what will my next bill look like?</li>
+            </ul>
+            <p>
+              That question bothered me enough that I turned it into my final year project. I wanted something more than a cool circuit or a one-off prototype. I wanted a system that could sit in an actual home and answer those questions in real time, using proper tariff logic and a bit of machine learning on top.
+            </p>
+            <p>
+              That's how <b>MyTenaga</b> was born – a smart IoT-based energy monitoring system that lives at the distribution board (DB) and behaves like your own personal myTNB, but with way more detail and control.
+            </p>
+
+            <h2 id="big-idea">The Big Idea</h2>
+            <p>
+              The vision for MyTenaga was simple to describe, but not so simple to build:
+            </p>
+            <ul>
+              <li>See what each DB circuit is using – not just total house kWh</li>
+              <li>Translate that usage into a proper TNB bill breakdown</li>
+              <li>Predict where the bill is likely heading before the month ends</li>
+              <li>Wrap everything in a clean, interactive web dashboard that normal people (not just engineers) can understand</li>
+            </ul>
+            <p>
+              I also challenged myself to:
+            </p>
+            <ul>
+              <li>Use low-cost, off-the-shelf hardware</li>
+              <li>Keep it realistic for a Malaysian home (single-phase DB, TNB tariff)</li>
+              <li>Use cloud services + ML in a way that feels meaningful, not overkill</li>
+            </ul>
+
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-lg-12">
+                <img src="gambar/MyTenaga/block diagram.png" alt="MyTenaga System Block Diagram" class="img-fluid rounded">
+                <center><i>Complete system architecture: from DB sensors to cloud processing and ML predictions</i></center>
+              </div>
+            </div>
+
+            <h2 id="distribution-board">Instrumenting the Distribution Board</h2>
+            <p>
+              Most consumer energy gadgets are either:
+            </p>
+            <ul>
+              <li>Whole-house smart meters (one reading only), or</li>
+              <li>Plug-level smart sockets (fine for a few devices, but not scalable)</li>
+            </ul>
+            <p>
+              I wanted something in between: <b>circuit-level monitoring at the DB</b>.
+            </p>
+            <p>
+              To do that, I used several <b>PZEM-004T energy meter modules</b>. Each PZEM is wired to the outgoing side of a specific MCB, for example:
+            </p>
+            <ul>
+              <li>Living Room</li>
+              <li>Bedroom</li>
+              <li>Kitchen</li>
+              <li>Air-cond</li>
+              <li>Spare / future circuit</li>
+            </ul>
+            <p>
+              Each module measures:
+            </p>
+            <ul>
+              <li>Voltage</li>
+              <li>Current</li>
+              <li>Active power</li>
+              <li>Energy (kWh)</li>
+            </ul>
+            <p>
+              All the PZEMs are mounted together in a custom 3D-printed enclosure near the DB. High-voltage wiring stays enclosed and safe, while the low-voltage communication pins are routed out to the controller.
+            </p>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-lg-12">
+                <img src="gambar/MyTenaga/prototypetodb.jpg" alt="Prototype connected to Distribution Board" class="img-fluid rounded">
+                <center><i>The prototype system connected to the distribution board, with PZEM modules monitoring individual circuits</i></center>
+              </div>
+            </div>
+            <p>
+              This layout keeps the protective function of the MCBs intact but lets the system see exactly how much each part of the house is using.
+            </p>
+
+            <h2 id="esp32-gateway">ESP32 + UPS: A Tiny Always-On Gateway</h2>
+            <p>
+              To tie all the PZEMs together and push the data to the cloud, I used an <b>ESP32</b>.
+            </p>
+            <p>
+              Its job is to:
+            </p>
+            <ul>
+              <li>Poll each PZEM over UART</li>
+              <li>Read the voltage, current, power, and energy values</li>
+              <li>Timestamp everything</li>
+              <li>Package the data as JSON</li>
+              <li>Send it securely to the cloud over Wi-Fi</li>
+            </ul>
+            <p>
+              I didn't want a fragile breadboard living near a DB, so I built the controller on <b>veroboard</b> – proper soldered connections for:
+            </p>
+            <ul>
+              <li>ESP32 module</li>
+              <li>PZEM communication lines</li>
+              <li>Power rails</li>
+              <li>Connectors to the UPS</li>
+            </ul>
+            <p>
+              For power, I used a small <b>Samirob UPS module</b> with two 18650 lithium-ion cells. It outputs a regulated 5V supply and has a USB-C charging port. More importantly, when the mains drops for a moment, the ESP32 keeps running without rebooting – which means:
+            </p>
+            <ul>
+              <li>No data gaps</li>
+              <li>No dashboard suddenly going "offline" during a short brownout</li>
+            </ul>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-md-6">
+                <img src="gambar/MyTenaga/prototype.png" alt="ESP32, PZEM, UPS prototype" class="img-fluid rounded">
+                <center><i>Close-up of the ESP32 controller with PZEM modules and UPS in the 3D-printed enclosure</i></center>
+              </div>
+              <div class="col-md-6">
+                <img src="gambar/MyTenaga/Flowchart.jpg" alt="ESP32 Flowchart" class="img-fluid rounded">
+                <center><i>ESP32 processing flowchart: polling PZEMs, data processing, and cloud transmission</i></center>
+              </div>
+            </div>
+            <p>
+              This little board essentially becomes the gateway between the DB and the cloud.
+            </p>
+
+            <h2 id="cloud-backend">Cloud Backend: Firebase as the Nerve Center</h2>
+            <p>
+              On the cloud side, I built the backend around <b>Firebase</b>.
+            </p>
+            <p>
+              The flow looks like this:
+            </p>
+            <ol>
+              <li>The ESP32 sends JSON payloads to a Cloud Function endpoint via HTTPS</li>
+              <li>The function validates and normalizes the data</li>
+              <li>Latest readings are stored in Firebase Realtime Database (for live display)</li>
+              <li>Time-series logs and aggregated data are stored in Cloud Firestore</li>
+            </ol>
+            <p>
+              Then a second layer of Cloud Functions kicks in:
+            </p>
+            <ul>
+              <li>Scheduled functions compute daily and monthly kWh per circuit</li>
+              <li>A billing function implements the July 2025 TNB Domestic Tariff</li>
+              <li>Another function checks usage vs thresholds and triggers email alerts</li>
+            </ul>
+            <p>
+              The billing function doesn't just do a flat "kWh × rate". It actually breaks the bill into:
+            </p>
+            <ul>
+              <li>Energy charge</li>
+              <li>Capacity charge</li>
+              <li>Network charge</li>
+              <li>Retail service charge</li>
+              <li>AFA (Automatic Fuel Adjustment)</li>
+              <li>Energy Efficiency Incentive (rebates in certain bands)</li>
+              <li>KWTBB surcharge</li>
+              <li>Service tax (where applicable)</li>
+            </ul>
+            <p>
+              All of this is recalculated automatically every day based on the actual measured kWh. So instead of guessing or doing manual Excel, the user gets:
+            </p>
+            <p>
+              <b>"If your billing period ended today, your bill would be about RM X, with Y% from your air-cond circuit."</b>
+            </p>
+
+            <h2 id="dashboard">The Dashboard: A Personal myTNB for Your Own DB</h2>
+            <p>
+              To make this usable, I built a web dashboard hosted on Firebase Hosting, using:
+            </p>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Firebase SDKs for live data</li>
+              <li>Chart.js for charts and graphs</li>
+            </ul>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-lg-12">
+                <img src="gambar/MyTenaga/dashboard.jpeg" alt="MyTenaga Dashboard" class="img-fluid rounded">
+                <center><i>The main dashboard showing real-time circuit monitoring, historical charts, and billing information</i></center>
+              </div>
+            </div>
+            <p>
+              The dashboard has several key views:
+            </p>
+
+            <h3>1. Real-Time Circuit Cards</h3>
+            <p>
+              Each monitored circuit appears as a "card" showing:
+            </p>
+            <ul>
+              <li>Circuit name (e.g. Living Room, Kitchen)</li>
+              <li>Voltage, current, power, energy (kWh)</li>
+              <li>Last updated time</li>
+            </ul>
+            <p>
+              You can literally flip a switch in the house and watch the power change on the corresponding card within seconds.
+            </p>
+
+            <h3>2. Historical Charts</h3>
+            <p>
+              For each circuit and for the whole home, you can see:
+            </p>
+            <ul>
+              <li>Daily kWh for the month</li>
+              <li>Which days were unusually high</li>
+              <li>How different circuits compare over time</li>
+            </ul>
+            <p>
+              I also added stacked bar and pie charts to show which circuit is dominating the bill.
+            </p>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-md-6">
+                <img src="gambar/MyTenaga/indvandtotal.jpg" alt="Individual and Total Power Charts" class="img-fluid rounded">
+                <center><i>Individual PZEM power graphs and combined total power visualization</i></center>
+              </div>
+              <div class="col-md-6">
+                <img src="gambar/MyTenaga/barchart.jpeg" alt="Daily Energy Consumption Bar Chart" class="img-fluid rounded">
+                <center><i>Daily energy consumption bar chart showing per-PZEM breakdown for the current month</i></center>
+              </div>
+            </div>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-lg-12">
+                <img src="gambar/MyTenaga/pichart.jpeg" alt="PZEM Energy Share Pie Chart" class="img-fluid rounded">
+                <center><i>Pie chart showing energy share by PZEM with corresponding bill allocation</i></center>
+              </div>
+            </div>
+
+            <h3>3. Billing and Forecast Panel</h3>
+            <p>
+              This is where it gets really interesting:
+            </p>
+            <ul>
+              <li>Current month bill so far (RM)</li>
+              <li>Breakdown of each tariff component</li>
+              <li>Per-circuit contribution to the total bill</li>
+              <li>Forecasted end-of-month usage and bill (from the ML model – more on that next)</li>
+            </ul>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-md-6">
+                <img src="gambar/MyTenaga/billnew.jpeg" alt="Current Month Bill" class="img-fluid rounded">
+                <center><i>Current month's bill calculation with complete TNB tariff breakdown</i></center>
+              </div>
+              <div class="col-md-6">
+                <img src="gambar/MyTenaga/billcheck.png" alt="TNB Bill Calculator Verification" class="img-fluid rounded">
+                <center><i>Verification: Comparing MyTenaga's calculation with official TNB bill calculator - both match exactly, confirming accuracy</i></center>
+              </div>
+            </div>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-lg-12">
+                <img src="gambar/MyTenaga/billforecast.jpeg" alt="Forecast Bill" class="img-fluid rounded">
+                <center><i>Forecast bill feature: combines historical usage from start of month with AI-predicted values for remaining days, then calculates the estimated end-of-month bill</i></center>
+              </div>
+            </div>
+            <p>
+              The goal is for a non-technical user to be able to say:
+            </p>
+            <p>
+              <b>"Okay, so far I'm at RM X this month, and the kitchen + air-conds are 70% of it."</b>
+            </p>
+
+            <h2 id="xgboost">Teaching the System to Look Ahead: XGBoost Forecasting</h2>
+            <p>
+              Real-time monitoring is great, but I also wanted MyTenaga to answer:
+            </p>
+            <p>
+              <b>"If I continue like this, where will my bill land by the end of the month?"</b>
+            </p>
+            <p>
+              For that, I added a machine learning component. The entire model development process was done in a <a href="https://colab.research.google.com/drive/1YmDAh4t41EJPN_TqlHUYzYcVrZn31Rz6?usp=sharing" target="_blank">Google Colab notebook</a>, which allowed me to experiment, iterate, and document the process.
+            </p>
+
+            <h3>Model Development in Google Colab</h3>
+            <p>
+              Since I didn't yet have months of local site data, I started with a public residential energy dataset and built an <b>XGBoost regression model</b> around it. The Colab notebook contains the complete workflow:
+            </p>
+            <ul>
+              <li><b>Data Loading & Exploration</b>: Imported and analyzed the residential energy consumption dataset to understand patterns and seasonality</li>
+              <li><b>Feature Engineering</b>: Created a comprehensive feature set including:
+                <ul>
+                  <li><b>Calendar features</b>: Day of week, day of year, month, quarter, year, workday vs weekend flag</li>
+                  <li><b>Lag features</b>: Energy usage from the previous 1–9 days (these capture short-term consumption patterns)</li>
+                </ul>
+              </li>
+              <li><b>Model Training</b>: Trained multiple XGBoost models with different configurations to find the best hyperparameters</li>
+              <li><b>Hyperparameter Tuning</b>: Used techniques like grid search and cross-validation to optimize model performance</li>
+              <li><b>Model Evaluation</b>: Compared baseline models (without lag features) against the enhanced model with lag features, measuring performance using MAE (Mean Absolute Error), MSE (Mean Squared Error), and MAPE (Mean Absolute Percentage Error)</li>
+              <li><b>Model Export</b>: Saved the trained model and hyperparameters for deployment</li>
+            </ul>
+            <p>
+              Those lag features turned out to be very powerful. Compared to a baseline XGBoost model without them, the lag-based model significantly reduced prediction error. The lag features capture the temporal dependencies in energy consumption – how yesterday's usage influences today's usage, and so on.
+            </p>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-lg-12">
+                <img src="gambar/MyTenaga/oneplot.png" alt="XGBoost Model Comparison" class="img-fluid rounded">
+                <center><i>Model performance comparison: XGBoost without lag features vs. with lag features, showing significant improvement in prediction accuracy</i></center>
+              </div>
+            </div>
+            <p>
+              The Colab notebook also includes visualizations showing:
+            </p>
+            <ul>
+              <li>Training vs validation loss curves</li>
+              <li>Feature importance plots (showing which features the model relies on most)</li>
+              <li>Prediction vs actual comparisons</li>
+              <li>Error distribution analysis</li>
+            </ul>
+
+            <h3>From Notebook to Production</h3>
+            <p>
+              Once trained and validated in Colab, I exported the model files (the trained XGBoost model and hyperparameters JSON) and deployed them as a Python Cloud Function on Google Cloud. In production, the flow is:
+            </p>
+            <ol>
+              <li>Aggregated daily kWh values are prepared in Firestore</li>
+              <li>Cloud Function retrieves the recent sequence of daily consumption</li>
+              <li>Feature engineering pipeline creates the same features used during training (calendar + lag features)</li>
+              <li>The XGBoost model predicts the next day's consumption</li>
+              <li>This prediction is chained iteratively to forecast until the end of the month</li>
+              <li>The forecasted total monthly kWh is fed back into the TNB billing logic</li>
+            </ol>
+            <p>
+              The dashboard then shows:
+            </p>
+            <ul>
+              <li>"Forecast energy: XXX kWh"</li>
+              <li>"Forecast bill: around RM YYY"</li>
+            </ul>
+            <p>
+              It's not meant to be a perfect prediction, but it's enough to warn users early if they're on track for a higher-than-usual bill. The model adapts to recent consumption patterns, so if someone suddenly starts using more energy (like turning on air-conds more frequently), the forecast will reflect that trend.
+            </p>
+            <div class="row g-3 mt-3 mb-4">
+              <div class="col-lg-12">
+                <img src="gambar/MyTenaga/energypredict (1).jpeg" alt="Energy Prediction Dashboard" class="img-fluid rounded">
+                <center><i>The AI-powered energy prediction feature integrated into the dashboard, showing forecasted consumption and bill</i></center>
+              </div>
+            </div>
+            <p>
+              You can view the complete model development process, including all the code, visualizations, and analysis, in the <a href="https://colab.research.google.com/drive/1YmDAh4t41EJPN_TqlHUYzYcVrZn31Rz6?usp=sharing" target="_blank">Google Colab notebook</a>.
+            </p>
+
+            <h2 id="smart-alerts">Smart Alerts: When the System Talks to You</h2>
+            <p>
+              Since all data and forecasts live in the cloud, adding alerts was straightforward.
+            </p>
+            <p>
+              Users can define:
+            </p>
+            <ul>
+              <li>A monthly target (e.g. RM 250)</li>
+              <li>A warning threshold (e.g. 70% of target)</li>
+              <li>A critical threshold (e.g. 90% of target)</li>
+            </ul>
+            <p>
+              Cloud Functions periodically check:
+            </p>
+            <ul>
+              <li>Actual usage so far</li>
+              <li>Forecasted end-of-month usage</li>
+            </ul>
+            <p>
+              When a threshold is crossed, the system sends an email with:
+            </p>
+            <ul>
+              <li>Current usage and current bill</li>
+              <li>Forecasted bill if behavior continues</li>
+              <li>Per-circuit usage contribution (for critical alerts)</li>
+            </ul>
+            <p>
+              So the system doesn't just show you graphs; it actually taps you on the shoulder and says:
+            </p>
+            <p>
+              <b>"Hey, if you keep this up, your bill might hit RM 3XX. You may want to reduce air-cond usage or shift some loads."</b>
+            </p>
+
+            <h2 id="closing">Closing Thoughts</h2>
+            <p>
+              MyTenaga started as a way to answer a simple question: "Why is my electricity bill so high?" But building it taught me that the real challenge wasn't just the hardware or the code – it was making something that could actually sit in a real home and provide genuine value.
+            </p>
+            <p>
+              The system uses off-the-shelf components, real cloud infrastructure, and a bit of machine learning to turn raw sensor data into actionable insights. More importantly, it does it in a way that's accessible to anyone, not just engineers.
+            </p>
+            <p>
+              Whether it's seeing which circuit is drawing too much power, understanding how the TNB tariff actually works, or getting a heads-up before the monthly bill arrives, MyTenaga puts the power of energy awareness directly in the homeowner's hands.
+            </p>
+
+            <h2 id="resources">Project Resources</h2>
+            <ul>
+              <li><b>Code & GitHub Repository</b>: <div class="content-resume">
+                <a href="https://github.com/DurraniHakim27/mitenaga" class="btn btn-outline-dark mt-3" target="_blank">View on GitHub</a>
+              </div></li>
+              <li><b>ML Model Development (Google Colab)</b>: <div class="content-resume">
+                <a href="https://colab.research.google.com/drive/1YmDAh4t41EJPN_TqlHUYzYcVrZn31Rz6?usp=sharing" class="btn btn-outline-dark mt-3" target="_blank">View on Google Colab</a>
+              </div></li>
+              <li><b>Technical Paper (PDF)</b>: <div class="content-resume">
+                <a href="Technical_Paper_MyTenaga.pdf" class="btn btn-outline-dark mt-3" target="_blank">Technical Paper</a>
+              </div></li>
+              <li><b>Full Report (PDF)</b>: <div class="content-resume">
+                <a href="Full_Report_MyTenaga.pdf" class="btn btn-outline-dark mt-3" target="_blank">Full Report</a>
+              </div></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to top -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
