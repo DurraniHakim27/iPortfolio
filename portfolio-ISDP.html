@@ -4,16 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>ThermoVision Project: Giving a Robot Tesla-like Vision</title>
-  <meta content="ThermoVision: an autonomous robot with Tesla-like monocular depth estimation, navigation, and plant monitoring" name="description">
-  <meta content="robotics, AI, YOLO, SCDepth, Raspberry Pi 5, Hailo-8, EWMA, navigation, MQTT, ESP32, MLX90614" name="keywords">
+
+  <title>ISDP Project: Autonomous Navigation IoT Service Robot — Durrani Hakim</title>
+  <meta content="An IoT-enabled service robot with autonomous navigation capabilities, built using Raspberry Pi, computer vision, and sensor fusion for indoor environments" name="description">
 
   <!-- Favicons -->
   <link href="assets/img/icons8-portfolio-16.png" rel="icon">
   <link href="assets/img/icons8-portfolio-64.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700|Poppins:300,400,600,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -25,7 +27,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -35,216 +36,372 @@
   <!-- Header -->
   <header id="header">
     <div class="d-flex flex-column">
-      <div class="profile text-center">
-        <img src="gambar/GambarDP.jpg" alt="Durrani Hakim" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Durrani Hakim</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://facebook.com/..." class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://instagram.com/..." class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://linkedin.com/in/..." class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <div class="profile">
+        <img src="gambar/GambarDP.jpg" alt="Durrani Hakim">
+        <h1><a href="index.html">Durrani Hakim</a></h1>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/durrani-hakim-mohd-fared-129b981aa" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/DurraniHakim27" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/drnihkim" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
         </div>
       </div>
+
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index.html#hero" class="nav-link"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#projects" class="nav-link active"><i class="bx bx-briefcase"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#internship" class="nav-link"><i class="bx bx-globe"></i> <span>Internship</span></a></li>
+          <li><a href="index.html#resume" class="nav-link"><i class="bx bx-file"></i> <span>Resume</span></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Breadcrumbs -->
-    <section id="breadcrumbs" class="breadcrumbs">
+
+    <!-- Project Hero -->
+    <section class="project-hero">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>ThermoVision Project</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Autonomous Navigation Robot with Temperature Control</li>
-          </ol>
+        <div class="row align-items-end">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-mist); margin-bottom: 1rem;">
+              Project Story
+            </div>
+            <h1>Autonomous Navigation IoT Service Robot</h1>
+            <p style="font-size: 1.2rem; color: var(--color-mist-light); max-width: 600px; line-height: 1.7;">
+              Building a vision-based autonomous robot that navigates indoor environments using monocular depth estimation, sensor fusion, and IoT connectivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-meta" data-aos="fade-up" data-aos-delay="100">
+          <div class="meta-item">
+            <span class="meta-label">Duration</span>
+            <span class="meta-value">Jan — Aug 2025</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <span class="meta-value">Malaysia</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Platform</span>
+            <span class="meta-value">Raspberry Pi 5 + Hailo-8</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">Computer Vision & Navigation</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Project Overview -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-        <div class="row gy-4">
+    <!-- Context Section -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">01 — Context</div>
+          <h2>The Problem & The Vision</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The idea was simple but ambitious: create a robot that could move around on its own, sense its environment, and interact with it intelligently — all using only a single monocular camera. Unlike remote-controlled bots, this one needed to be fully autonomous, able to navigate toward objects as checkpoints, locate an industrial plant, and even monitor the plant temperature conditions in real time.
+          </p>
+          <p>
+            To achieve that, the robot had to answer two fundamental questions: <em>what is around me</em> and <em>how far away is it</em>. These are the same questions Tesla cars ask when they drive down the road, and we wanted to give our robot that same kind of vision — but without the expensive LiDAR sensors.
+          </p>
+          <p>
+            The challenge was clear: build a cost-effective autonomous navigation system using only affordable hardware and AI-powered computer vision, capable of operating reliably in indoor environments.
+          </p>
+        </div>
 
-          <div class="col-lg-14">
-            <div class="portfolio-info">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Duration</strong>: Jan 2025 – Aug 2025</li>
-                <li><strong>Location</strong>: Malaysia</li>
-                <li><strong>Tech</strong>: Raspberry Pi 5, Hailo-8, YOLO, SCDepth, EWMA, ESP32, MQTT, MLX90614</li>
-                <li><strong>PDF</strong>: <div class="content-resume">
- 
-                  <a href="ISDP (3).pdf" class="btn btn-outline-dark mt-3" target="_blank">Technical Paper</a>
-                </div></li>
-                <li><b>Code & GitHub Repository</b>: <div class="content-resume">
- 
-                  <a href="https://github.com/DurraniHakim27/Autonomous-Navigation-IoT-Robot-with-Vision-Thermal-Sensing-and-Control" class="btn btn-outline-dark mt-3" target="_blank">View on GitHub</a>
-                </div></li>
-              </ul>
-            </div>
+        <div class="image-gallery" data-aos="fade-up" data-aos-delay="200">
+          <div class="image-card">
+            <img src="gambar/ThermoVision/face.jpg" alt="ThermoVision Robot">
+            <div class="image-caption">The ThermoVision prototype robot — compact, autonomous, and vision-powered</div>
           </div>
-         <br><br><p></p>
-          <div class="row">
-            <!-- Left side: Image -->
-            <div class="col-lg-6">
-              <img src="gambar/ThermoVision/face.jpg" alt="ThermoVision robot" class="img-fluid">
-              <center><i>ThermoVision prototype robot</i></center>
-            </div>
-          
-            <!-- Right side: YouTube video -->
-            <div class="col-lg-6">
-              <b>YouTube Demo</b>:
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/31H6UEh_g4s?si=yLtYqfunngyStD1h" title="ThermoVision Demo" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="col-lg-12 portfolio-description">
-            <h2>The Goal</h2>
-            <p>
-              When we first started our project, the idea was simple but ambitious: create a robot that could move around on its own, sense its environment, and interact with it intelligently all by using only a single monocular camera. Unlike remote-controlled bots, this one needed to be autonomous, able to navigate toward objects as checkpoints, locate an industrial plant, and even monitor the plant temperature conditions in real time.
-            </p>
-            <p>
-              To achieve that, the robot had to answer two fundamental questions: <b>what is around me</b> and <b>how far away is it</b>. These are the same questions Tesla cars ask when they drive down the road, and we wanted to give our little robot that same kind of vision.
-            </p>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/MainIdea.png" alt="YOLO Detection" class="img-fluid rounded">
-                <center><i>The ISM represents robot which will locate each checkpoint and towards the final target.</i></center>
-              </div>
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/Frontview.png" alt="Depth Estimation" class="img-fluid rounded">
-                <center><i>Front view of the robot. A single monocular Pi Camera (left) handles vision and navigation, while the thermal sensor (right) detects heat from distance.</i></center>
-              </div>
-            </div>
-            <p></p>
-            <P></P>
-            <h2>Depth Estimation: Seeing the World in 3D</h2>
-            <p>
-              We used a Raspberry Pi 5 paired with a <b>Hailo-8 AI accelerator (26 TOPS)</b> as ThermoVision’s brain. The Hailo chip was essential. Without it, YOLO ran at only 7 frames per second and SCDepth could not run at all. With the accelerator, both models ran smoothly in parallel.
-            </p>
-            <ul>
-              <li><b>YOLO</b> detected objects: sphere, cylinder, cuboid, cone, and the “plant” (represented by a Maggi Hotcup).</li>
-              <li><b>SCDepth</b> estimated the distance to those objects using a single camera frame.</li>
-            </ul>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/yolo.png" alt="YOLO Detection" class="img-fluid rounded">
-                <center><i>YOLO Detection</i></center>
-              </div>
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/depth.png" alt="Depth Estimation" class="img-fluid rounded">
-                <center><i>ScDepthV3 Estimation</i></center>
-              </div>
-            </div>
-            
-            
-            
-            <p>
-              This approach is similar to Tesla’s monocular vision system. Instead of expensive sensors like LiDAR, ThermoVision relied on AI to create a sense of depth. But of course, TeslaVision is much much more advanced tech. 
-            </p>
-            <div class="col-lg-8">
-              <img src="gambar/ThermoVision/yoloscdepth.png" alt="ThermoVision robot" class="img-fluid">
-              <center><i>Running both YOLO and SCDepthV3 in parralel</i></center>
-            </div>
-
-           <p></p>
-            <h2>The Flicker Problem</h2>
-            <p>
-              Here is the disadvantage of Ai depth estimation, the depth numbers flickered. A cone at 26cm could read 25cm the next frame and 29cm the frame after. This cause ThermoVision would inch forward, stop abruptly, then creep again. Watching it reminded me of someone learning to drive stick for the first time, lots of jerks and pauses. 
-            </p>
-
-            <p>The solution wasn’t just about running bigger models or collecting more data. The raw output needed stability. There is a simple but powerful idea from signal processing: <b>Exponentially Weighted Moving Average (EWMA)</b> filter. EWMA smoothed the depth readings, giving more weight to recent values. The effect was immediate. The numbers steadied, and ThermoVision’s movements became smooth and confident.</p>
-             <div class="col-lg-8">
-            <img src="gambar/ThermoVision/ewma.png" alt="ThermoVision robot" class="img-fluid">
-            <center><i>Blue line represents the flicker/jitter value of the depth estimation, while the orange line is the smoothed value by EWMA</i></center>
-            </div>
-
-
-            <h2>From Vision to Navigation</h2>
-            <p>
-              With stable depth, the next challenge was navigation. ThermoVision used a simple but effective strategy:
-            </p>
-            <ul>
-              <li>When the robot is not detecting the target object, it will rotate clockwise or counter-clockwise to scan surroundings.</li>
-              <li>Once the desired target is in the frame, the robot will align itself so the detected object is at the center of the frame.</li>
-              <li>Move forward, adjusting with hysteresis to avoid oversteer.</li>
-              <li>Stop when distance is less than ~23 cm.</li>
-            </ul>
-
-            <div class="row g-3">
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/ANCircuit.png" alt="YOLO Detection" class="img-fluid rounded">
-                <center><i>two motor driver (tb6612fng) used two drive four mecanum wheels</i></center>
-              </div>
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/CircuitANreal.jpg" alt="Depth Estimation" class="img-fluid rounded">
-                <center><i>Implemented Circuit with 2S 18650 Battery</i></center>
-              </div>
-            </div>
-            <p></p>
-
-            <h2>Plant Temperature  Monitoring</h2>
-            <p>
-              The final checkpoint was the “plant.” ThermoVision used an <b>MLX90614 infrared sensor</b> to measure temperature without contact. The onboard ESP32 sent this data via MQTT to another ESP32 at the plant control station. If the temperature was above threshold, a cooling fan activated. Once below the threshold, the fan turned off and ThermoVision retraced its journey in reverse order.
-            </p>
-            
-            
-
-            <div class="row g-3">
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/PLantcircuit.png" alt="YOLO Detection" class="img-fluid rounded">
-                <center><i>Schematics of the Plant Control</i></center>
-              </div>
-              <div class="col-md-6">
-                <img src="gambar/ThermoVision/ImplementedCircuit.png" alt="Depth Estimation" class="img-fluid rounded">
-                <center><i>Implemented Circuit</i></center>
-              </div>
-            </div>
-            <p></p>
-            
-            <h2>Report and Appendix</h2>
-            <ul>
-              
-             
-              <li><b>Technical Paper (PDF)</b>: <div class="content-resume">
- 
-                <a href="ISDP (3).pdf" class="btn btn-outline-dark mt-3" target="_blank">Technical Paper</a>
-              </div></li>
-              <li><b>Code & GitHub Repository</b>: <div class="content-resume">
- 
-                <a href="https://github.com/DurraniHakim27/Autonomous-Navigation-IoT-Robot-with-Vision-Thermal-Sensing-and-Control" class="btn btn-outline-dark mt-3" target="_blank">View on GitHub</a>
-              </div></li>
-            </ul>
-
+          <div class="image-card">
+            <img src="gambar/ThermoVision/MainIdea.png" alt="Navigation Concept">
+            <div class="image-caption">The robot navigates through checkpoints to reach the final target</div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- The Approach Section -->
+    <section class="story-section" style="background: var(--color-stone-light);">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">02 — The Approach</div>
+          <h2>Hardware & Architecture</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            At the heart of ThermoVision is a <strong>Raspberry Pi 5</strong> paired with a <strong>Hailo-8 AI accelerator (26 TOPS)</strong>. The Hailo chip was essential — without it, YOLO object detection ran at only 7 frames per second and SCDepth depth estimation could not run at all. With the accelerator, both models ran smoothly in parallel.
+          </p>
+          <p>
+            The hardware architecture combines vision, thermal sensing, and motor control into an integrated system:
+          </p>
+        </div>
+
+        <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/Frontview.png" alt="Robot Front View">
+            <div class="tech-caption">Pi Camera for vision (left) and MLX90614 thermal sensor (right)</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/ANCircuit.png" alt="Motor Driver Circuit">
+            <div class="tech-caption">Dual TB6612FNG motor drivers controlling four Mecanum wheels</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/CircuitANreal.jpg" alt="Implemented Circuit">
+            <div class="tech-caption">Implemented circuit with 2S 18650 battery pack</div>
+          </div>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="300">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Key Components</h4>
+          <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Raspberry Pi 5</strong> — Main processing unit running the navigation algorithms</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Hailo-8 AI Accelerator</strong> — 26 TOPS neural network inference for real-time vision</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Pi Camera Module</strong> — Monocular camera for depth estimation and object detection</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>MLX90614</strong> — Infrared temperature sensor for non-contact thermal monitoring</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>ESP32</strong> — WiFi-enabled microcontroller for IoT communication via MQTT</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Mecanum Wheels</strong> — Omnidirectional movement for precise navigation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Implementation Section -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">03 — Technical Implementation</div>
+          <h2>Vision, Depth & Navigation</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Seeing the World in 3D</h4>
+          <p>
+            We implemented a dual-model vision pipeline running on the Hailo-8 accelerator:
+          </p>
+          <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>YOLO</strong> — Detects objects in real-time: sphere, cylinder, cuboid, cone, and the "plant" (represented by a Maggi Hotcup)</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>SCDepthV3</strong> — Estimates the distance to detected objects using only a single camera frame</li>
+          </ul>
+          <p>
+            This approach mirrors Tesla's monocular vision system. Instead of expensive sensors like LiDAR, ThermoVision relies on AI to create a sense of depth from 2D images.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/yolo.png" alt="YOLO Detection">
+            <div class="tech-caption">YOLO real-time object detection identifying checkpoints</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/depth.png" alt="SCDepth Estimation">
+            <div class="tech-caption">SCDepthV3 generating depth maps from monocular frames</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/yoloscdepth.png" alt="Parallel Processing">
+            <div class="tech-caption">Both models running in parallel on the Hailo-8 accelerator</div>
+          </div>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="300">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Navigation Logic</h4>
+          <p>
+            With stable depth readings, the robot follows a simple but effective navigation strategy:
+          </p>
+          <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">When no target is detected, rotate clockwise/counter-clockwise to scan surroundings</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Once the target is in frame, align the robot so the object is centered</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Move forward while making micro-adjustments with hysteresis to prevent oversteer</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Stop when the distance to target is less than ~23 cm</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="story-section" style="background: var(--color-stone-light);">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">04 — Challenges</div>
+          <h2>The Flicker Problem</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            Here's the disadvantage of AI depth estimation: the depth numbers flickered. A cone at 26cm could read 25cm the next frame and 29cm the frame after. This caused ThermoVision to inch forward, stop abruptly, then creep again. Watching it reminded me of someone learning to drive stick for the first time — lots of jerks and pauses.
+          </p>
+          <p>
+            The solution wasn't about running bigger models or collecting more data. The raw output needed stability. We applied a signal processing technique: the <strong>Exponentially Weighted Moving Average (EWMA)</strong> filter. EWMA smoothed the depth readings by giving more weight to recent values while still considering historical data.
+          </p>
+        </div>
+
+        <div class="image-gallery" data-aos="fade-up" data-aos-delay="200">
+          <div class="image-card" style="flex: 0 0 100%; max-width: 700px; margin: 0 auto;">
+            <img src="gambar/ThermoVision/ewma.png" alt="EWMA Filtering">
+            <div class="image-caption">Blue line shows the flickering raw depth values; orange line shows the smoothed output after EWMA filtering</div>
+          </div>
+        </div>
+
+        <div class="insight-box" data-aos="fade-up" data-aos-delay="300">
+          <p>
+            The effect was immediate. The numbers steadied, and ThermoVision's movements became smooth and confident. Sometimes the simplest solutions — a well-chosen filter — outperform complex model retraining.
+          </p>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="400">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Other Technical Hurdles</h4>
+          <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Sensor Calibration</strong> — The thermal sensor required careful calibration to provide accurate readings at varying distances</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Obstacle Detection</strong> — Balancing detection sensitivity to avoid false positives while not missing real obstacles</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Path Planning</strong> — Implementing robust path correction when the robot deviated from its intended trajectory</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Real-time Constraints</strong> — Ensuring all processing happened fast enough for responsive navigation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- IoT Integration Section -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">05 — IoT Integration</div>
+          <h2>Plant Temperature Monitoring</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The final checkpoint in the robot's journey was the "plant" — a simulated industrial unit represented by a Maggi Hotcup. ThermoVision uses an <strong>MLX90614 infrared sensor</strong> to measure temperature without contact. This data isn't just logged locally; it's part of an IoT ecosystem.
+          </p>
+          <p>
+            The onboard ESP32 transmits temperature readings via <strong>MQTT</strong> to another ESP32 at the plant control station. If the temperature exceeds a defined threshold, a cooling fan automatically activates. Once the temperature drops below the threshold, the fan turns off and ThermoVision retraces its journey in reverse order.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/PLantcircuit.png" alt="Plant Circuit Schematic">
+            <div class="tech-caption">Schematic of the plant control station with ESP32 and cooling system</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/ThermoVision/ImplementedCircuit.png" alt="Implemented Plant Circuit">
+            <div class="tech-caption">Physical implementation of the remote monitoring station</div>
+          </div>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="300">
+          <p>
+            This architecture demonstrates how autonomous robots can integrate with industrial IoT systems — not just navigating autonomously, but also participating in distributed control loops.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="story-section" style="background: var(--color-stone-light);">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">06 — Results</div>
+          <h2>What We Achieved</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The project produced a fully functional autonomous navigation system:
+          </p>
+          <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">A working robot capable of autonomously navigating indoor spaces using only monocular vision</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Real-time object detection and depth estimation at 30+ FPS with Hailo-8 acceleration</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Smooth navigation behavior through EWMA-filtered depth readings</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Complete IoT temperature monitoring system with automated cooling response</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Cost-effective implementation using affordable consumer hardware</li>
+          </ul>
+        </div>
+
+        <div class="image-gallery" data-aos="fade-up" data-aos-delay="200">
+          <div class="image-card" style="flex: 0 0 100%; max-width: 800px; margin: 0 auto;">
+            <div class="ratio ratio-16x9" style="border-radius: 16px; overflow: hidden;">
+              <iframe src="https://www.youtube.com/embed/31H6UEh_g4s?si=yLtYqfunngyStD1h" title="ThermoVision Demo" allowfullscreen></iframe>
+            </div>
+            <div class="image-caption">Watch ThermoVision in action — navigating checkpoints autonomously</div>
+          </div>
+        </div>
+
+        <div class="resume-download" style="margin-top: 3rem;" data-aos="fade-up" data-aos-delay="300">
+          <a href="ISDP (3).pdf" target="_blank">
+            <i class="bx bx-file"></i> Read Full Technical Paper
+          </a>
+          <a href="https://github.com/DurraniHakim27/Autonomous-Navigation-IoT-Robot-with-Vision-Thermal-Sensing-and-Control" target="_blank" style="margin-left: 1rem; background: transparent; color: var(--color-charcoal); border: 1.5px solid var(--color-charcoal);">
+            <i class="bx bxl-github"></i> View Code on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflection Section -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">07 — Reflection</div>
+          <h2>What I Learned</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            This project reinforced that robotics is the intersection of multiple disciplines — computer vision, embedded systems, control theory, and hardware integration. The challenge wasn't just getting individual components to work, but making them work together in real time.
+          </p>
+          <p>
+            The flicker problem taught me an important lesson: sometimes elegant mathematics (EWMA filtering) beats brute-force approaches (bigger models, more data). Understanding the fundamental nature of your problem — in this case, noisy temporal data — leads to better solutions than throwing more compute at it.
+          </p>
+          <p>
+            I also gained appreciation for edge AI acceleration. The Hailo-8 transformed what was possible on a Raspberry Pi, enabling real-time inference that would otherwise require a full desktop GPU. This is the future of robotics — powerful AI running on efficient, affordable hardware.
+          </p>
+          <p>
+            Most importantly, I learned the satisfaction of watching a robot you've built make its own decisions, navigate its environment, and complete its mission. There's something magical about the first time it works — when the code you've written becomes physical motion in the real world.
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- Back to top -->
+  <!-- Footer Navigation -->
+  <section style="background: var(--color-charcoal); padding: 3rem 0; color: var(--color-snow);">
+    <div class="container text-center">
+      <p style="color: var(--color-mist); margin-bottom: 1.5rem;">Continue exploring</p>
+      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+        <a href="index.html#projects" style="color: var(--color-snow); display: flex; align-items: center; gap: 0.5rem;">
+          <i class="bx bx-arrow-left"></i> Back to Projects
+        </a>
+        <a href="portfolio-Internship.html" style="color: var(--color-snow); display: flex; align-items: center; gap: 0.5rem;">
+          Next: Internship <i class="bx bx-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

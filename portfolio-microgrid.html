@@ -5,573 +5,480 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Microgrid: Power Management Systems</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <!DOCTYPE html>
-  <html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-    <title>Microgrid: Power Management Systems</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-  
-    <!-- Favicons -->
-    <link href="assets/img/icons8-portfolio-16.png" rel="icon">
-    <link href="assets/img/icons8-portfolio-64.png" rel="apple-touch-icon">
-  
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-  
-    <!-- =======================================================
-    * Template Name: iPortfolio
-    * Updated: Nov 17 2023 with Bootstrap v5.3.2
-    * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
-  </head>
-  
-  <body>
-  
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="d-flex flex-column">
-  
-        <div class="profile">
-          <img src="gambar/GambarDP.jpg" alt="" class="img-fluid rounded-circle">
-          <h1 class="text-light"><a href="index.html">Durrani Hakim</a></h1>
-          <div class="social-links mt-3 text-center">
-            <a href="https://www.facebook.com/md.durrani.9?mibextid=LQQJ4d" class="facebook"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.instagram.com/drnihkim?igsh=MXE3NDZyaW13dHJtNQ%3D%3D&utm_source=qr" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/durrani-hakim-mohd-fared-129b981aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          </div>
+  <title>Solar PV System Design & Microgrid Power Management — Durrani Hakim</title>
+  <meta content="A comprehensive project covering photovoltaic system design using SAM software and microgrid power management systems with intelligent load shedding" name="description">
+
+  <!-- Favicons -->
+  <link href="assets/img/icons8-portfolio-16.png" rel="icon">
+  <link href="assets/img/icons8-portfolio-64.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Mobile nav toggle button -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="gambar/GambarDP.jpg" alt="Durrani Hakim">
+        <h1><a href="index.html">Durrani Hakim</a></h1>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/durrani-hakim-mohd-fared-129b981aa" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/DurraniHakim27" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/drnihkim" target="_blank" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
         </div>
-        </div>
-  
-        <nav id="navbar" class="nav-menu navbar">
-          <ul>
-            <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-            <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-            <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-            <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Articles</span></a></li>
-            <li><a href="index.html" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-          </ul>
-        </nav><!-- .nav-menu -->
       </div>
-    </header><!-- End Header -->
-  
-    <main id="main">
-  
-      <!-- ======= Breadcrumbs ======= -->
-      <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container">
-  
-          <div class="d-flex justify-content-between align-items-center">
-            <h2>My Portfolio</h2>
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li>My Projects</li>
-            </ol>
-          </div>
-  
-        </div>
-      </section><!-- End Breadcrumbs -->
-  
-      <!-- ======= Portfolio Details Section ======= -->
-      <section id="portfolio-details" class="portfolio-details">
-        <div class="container">
-  
-          <div class="row gy-4">    
-  
-            <div class="col-lg-8">
-              <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-  
-                  <div class="swiper-slide">
-                    <img src="gambar/Portfolio/Microgrid/first test.png" alt="">
-                  </div>
-  
-                  <div class="swiper-slide">
-                    <img src="gambar/Portfolio/Microgrid/Scgematicss.png" alt="">
-                  </div>
-  
-                  <div class="swiper-slide">
-                    <img src="gambar/Portfolio/Microgrid/REsult Web1.png" alt="">
-                  </div>
-  
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#projects" class="nav-link active"><i class="bx bx-briefcase"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#internship" class="nav-link"><i class="bx bx-globe"></i> <span>Internship</span></a></li>
+          <li><a href="index.html#resume" class="nav-link"><i class="bx bx-file"></i> <span>Resume</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-mist); margin-bottom: 1rem;">
+              Academic Project
             </div>
-  
-              </div>
-              <div class="portfolio-description">
-                <h1><b>MICROGRID: POWER MANAGEMENT SYSTEMS</b></h1>
-                <br>
-                <h2>1. Introduction</h2>
-                <br><br>
-                <p><b>1.1 Overview</b></p>
-                <br>
-                <p>As a passionate advocate for clean energy, I embarked on a personal project to create a power management system in microgrid. This system is designed to ensure that when there is shortage of power, the systems will interupt the delivery of electricity of certain non-essential (non-critcal loads) to maintain the integrity of electric grid and preserve power for critical loads, such as Life-saving Hospitals, Emergency Services, Military installations and Financial Institutions.</p>
-                <br><br>
-                <p><b>1.2 Project Goals</b></p>
-                
-                <p>To make an optimized load shedding process to balance the supply and demand and maintain the stability of the electrical grid.</p>
-                <br>
-                <h2>2. Why Load Shedding?</h2>
-                <p>Load shedding is a crucial practice employed by utility companies to maintain the stability of electrical grids. This controlled reduction of power consumption becomes necessary during periods of high demand or unexpected disturbances to prevent grid instability, equipment damage, and the risk of widespread blackouts. By strategically shedding non-essential loads, load shedding ensures that the electrical system operates within safe parameters, protecting critical infrastructure, and prioritizing essential and critical loads. It is a proactive measure that safeguards against potential failures, supporting the reliability and resilience of the power grid in the face of challenges.</p>
-                <br>
-                
-                
-                <h2>3. System Components And How It Works</h2>
-                <br><br>
-                <p><b>3.1 ESP32 DevKit</b></p>
-                <br>
-                <p>The microcontroller serves as the central processing unit, gathering data from sensors, performing calculations, make decision to manage loads and controlling the relay switch.</p>
-                <br><br>
-                <p><b>3.2 Solar Panel</b></p>
-                <br>
-                <p>This acts as one of the renewable energy sources that is used to power up the load.</p>
-                <br><br>
-                <p><b>3.3 Wind Generator</b></p>
-                <br>
-                <p>Wind generator will provide extra power to power up the load alongside with solar panel. Since the microgrid is not grid-connected, the system relies heavily on both of these renewable energy sources.</p>
-                <br><br>
-                <p><b>3.4 Energy Storage (Battery)</b></p>
-                <br>
-                <p> This component is essential as it is being used to storage excess energy produced by both Solar Panel and Wind Generator. Since solar panel does not produce much power at night and Wind generator does not produce power when there is no wind, the excess energy stored from the energy storge (battery) will be used to power up the loads.</p>
-                <br><br>
-                <p><b>3.5 Three Phase Rectifier</b></p>
-                <br>
-                <p>The wind generator generates 3 phase AC and the energy storage (battery) stores energy in DC. This component will convert AC power from the generator to DC Power and able to store its energy in the battery.</p>
-                <br><br>
-                <p><b>3.6 Buck Converter</b></p>
-                <br>
-                <p>Although we already rectifed the power from wind generator from AC to DC, it is important to make sure the DC voltage of the wind generator matches voltage the energy storage (battery). In this case, the battery is rated 3.7V and the wind generator produces higher voltage. Buck converter is used to step down the DC Voltage of the wind generator to matches the battery voltage. </p>
-                <br><br>
-                <p><b>3.7 MPPT Solar Charger </b></p>
-                <br>
-                <p>MPPT checks output of PV module, compares it to battery voltage then fixes what is the best power that PV module can produce to charge the battery and converts it to the best voltage to get maximum current into battery. It can also supply power to loads, which is connected directly to the battery.</p>
-                <br><br>
-                <p><b>3.8 Boost Converter </b></p>
-                <br>
-                <p>The output from the MPPT Solar Charger is rated 3.7V DC while the load are rated 12V AC. Boost Converter is used to boost voltage from 3.7V to 12V DC.</p>
-                <br><br>
-                <p><b>3.9 Inverter</b></p>
-                <br>
-                <p>The inverter will convert the 12V DC from boost converter to 12V AC to supply for the loads</p>
-                <br><br>
-                <p><b>3.10 Relay Switch</b></p>
-                <br>
-                <p>Act as switches that open and close the circuits by receiving electrical signals from outside sources. In this case ESP32</p>
-                <br><br>
-                <p><b>3.11 Loads (Light Bulbs)</b></p>
-                <br>
-                <p>I use 3 bulbs to represent 3 different types of loads, which is Critical Load, Industrial Load and Domestic Load</p>
-                <br><br>
-                <p><b>3.12 Battery Level Gauge </b></p>
-                <br>
-                <p>To monitor and determine the State of Charge (SOC) of the battery and then send the signal to the ESP32.</p>
-                <br><br>
-                <p><b>3.13 AWG16 Wire </b></p>
-                <br>
-                <p>Jumper wire is not suitable for this project as the current will be higher than 2A. This type of wire is rated to conduct maximum current of 10A .</p>
-                <br><br>
-
-
-                <h2>4. Schematic Diagram</h2>
-                <br><br>
-                <center><img src="gambar/Portfolio/Microgrid/Scgematicss.png" class="img-fluid" alt=""></center>
-                <center><i>Schematics of The Microgrid</i></center>
-                <br><br>
-                
-                
-                
-                <h2>5. Resources Needed</h2>
-                <br><br>
-                
-                      
-                <table class="table">
-                  <thead>
-                    <tr>
-                    <th>No</th>
-                    <th>Components</th>
-                    <th>Quantity</th>
-                    <th>Shop Link</th>
-                    
-                    </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td data-label="S.No">1</td>
-                          <td data-label="Name">ESP32 DevKit</td>
-                          <td data-label="Age">1</td>
-                          <td data-label="Marks%"><a href="https://shp.ee/3zl2mdw">Here</a></td>
-                          
-                      </tr>
-  
-                      <tr>
-                          <td data-label="S.No">2</td>
-                          <td data-label="Name">Solar Panel 12W/6V</td>
-                          <td data-label="Age">1</td>
-                          <td data-label="Marks%"><a href="https://shp.ee/azrb0qy">Here</a></td>
-                          
-                      </tr>
-  
-                      <tr>
-                          <td data-label="S.No">3</td>
-                          <td data-label="Name">Wind Generator (3 Phase Generator)</td>
-                          <td data-label="Age">1</td>
-                          <td data-label="Marks%"><a href="https://shp.ee/uaomhck">Here</a></td>
-                          
-                      </tr>
-  
-                      <tr>
-                          <td data-label="S.No">4</td>
-                          <td data-label="Name">18650 Battery</td>
-                          <td data-label="Age">2</td>
-                          <td data-label="Marks%"><a href="https://shp.ee/k0qmh1i">Here</a></td>
-                          
-                      </tr>
-
-                      
-                      <tr>
-                        <td data-label="S.No">5</td>
-                        <td data-label="Name">Buck Converter</td>
-                        <td data-label="Age">1</td>
-                        <td data-label="Marks%"><a href="https://shp.ee/u2uto7m">Here</a></td>
-                        
-                    </tr>
-
-                    
-                    <tr>
-                      <td data-label="S.No">6</td>
-                      <td data-label="Name">MPPT Solar Charger</td>
-                      <td data-label="Age">1</td>
-                      <td data-label="Marks%"><a href="https://shp.ee/c7q18ls">Here</a></td>
-                      
-                  </tr>
-                  
-                  <tr>
-                    <td data-label="S.No">7</td>
-                    <td data-label="Name">	 Boost Converter</td>
-                    <td data-label="Age">1</td>
-                    <td data-label="Marks%"><a href="https://shp.ee/rwue837">Here</a></td>
-                    
-                </tr>
-                
-                
-            <tr>
-              <td data-label="S.No">8</td>
-              <td data-label="Name">	
-                12V Inverter</td>
-              <td data-label="Age">3</td>
-              <td data-label="Marks%"><a href="https://shp.ee/51h2da4">Here</a></td>
-              
-          </tr>
-
-          <tr>
-            <td data-label="S.No">9</td>
-            <td data-label="Name">	
-              12V Light Bulbs</td>
-            <td data-label="Age">3</td>
-            <td data-label="Marks%"><a href="https://shp.ee/4yuv652">Here</a></td>
-            
-        </tr>
-        <tr>
-          <td data-label="S.No">10</td>
-          <td data-label="Name">	
-            AWG16 Wire (Red+Black)</td>
-          <td data-label="Age">1-2 Meter</td>
-          <td data-label="Marks%"><a href="https://shp.ee/81rzkeb">Here</a></td>
-          
-      </tr>
-      <tr>
-        <td data-label="S.No">11</td>
-        <td data-label="Name">	
-          Relay Switch 3.3V</td>
-        <td data-label="Age">2</td>
-        <td data-label="Marks%"><a href="hhttps://shp.ee/5kafgll">Here</a></td>
-        
-    </tr>
-    <tr>
-      <td data-label="S.No">12</td>
-      <td data-label="Name">	
-        Battery Gauge</td>
-      <td data-label="Age">1</td>
-      <td data-label="Marks%"><a href="https://shp.ee/ei73gtj">Here</a></td>
-      
-  </tr>
-                  </tbody>
-                </table>
-
-                <br><br>
-                
-                <h2>7. Setting Up the Circuit</h2>
-                <br><br>
-                
-                <p>Connect all the component based on the schematics above. make sure to double check the connections</p>
-                <br><br>
-                
-                <center><img src="gambar/Portfolio/Microgrid/circuitt.png" class="img-fluid" alt=""></center>
-                <center><i>Connections of the circuit</i></center>
-                <br>
-
-                <h2>9. Software and Libraries</h2>
-                <head>
-                  <meta charset="UTF-8" />
-                  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              
-                  <link rel="stylesheet" href="style1.css" />
-                  <link rel="stylesheet" href="prism.css" />
-              
-                  <title>Highlight code with copy button</title>
-                </head>
-                <body>
-                  <div class="container">
-                    <div class="code-wrapper">
-                      <pre>
-                          <code id="code" class="language-css">
-                            #define BLYNK_TEMPLATE_ID "TMPL61aPbFDQa"
-                            #define BLYNK_TEMPLATE_NAME "Engineering Team project"
-                            #define BLYNK_AUTH_TOKEN "xclloEt2T11ZkKrAYy9mPHydh1BgrmMo"
-                            
-                            #include &lt;Ticker.h&gt;
-                            #include &lt;DFRobot_MAX17043.h&gt;
-                            #include &lt;BlynkSimpleEsp32.h&gt;
-
-                            DFRobot_MAX17043 FuelGauge;  // Declare FuelGauge globally
-
-                            unsigned long simulatedTime = 0;
-                            const unsigned long timeStep = 5000;  // 5 seconds
-
-                            #define RELAY1_PIN 32  // Replace with the actual pin connected to relay 1
-                            #define RELAY2_PIN 33  // Replace with the actual pin connected to relay 2
-
-                            //========================= Variables for wifi server setup =============================
-                            const char *ssid = "Durrani";
-                            const char *password = "87654321";
-                            const char *blynkAuth = "xclloEt2T11ZkKrAYy9mPHydh1BgrmMo";
-
-                            Ticker timer;
-
-                            float prevBatteryPercentage = 0.0;
-                            unsigned long prevUpdateTime = 0;
-                            float batteryChangeRate = 0.0;
-
-                            void setup() {
-                              Serial.begin(115200);
-                              Serial.println("Simulation, Battery Gauge, and Relay Control started.");
-
-                              WiFi.begin(ssid, password);
-                              while (WiFi.status() != WL_CONNECTED) {
-                                delay(500);
-                                Serial.print(".");
-                              }
-                              Serial.println("\nConnected to Wi-Fi");
-                              Blynk.begin(blynkAuth, ssid, password);
-
-                              FuelGauge.begin();
-
-                              // Initialize relay pins as OUTPUT
-                              pinMode(RELAY1_PIN, OUTPUT);
-                              pinMode(RELAY2_PIN, OUTPUT);
-
-                              // Turn off relays initially
-                              digitalWrite(RELAY1_PIN, HIGH);
-                              digitalWrite(RELAY2_PIN, HIGH);
-
-                              timer.attach_ms(timeStep, updateSimulatedTime);
-                            }
-
-                            void loop() {
-                              // Your simulation logic here
-
-                              // Read battery gauge
-                              float batteryPercentage = FuelGauge.readPercentage()-59;
-                              float batteryVoltage = FuelGauge.readVoltage()/1000;
-
-                              // Calculate the rate of change
-                              unsigned long currentTime = millis();
-                              unsigned long elapsedTime = currentTime - prevUpdateTime;
-
-                              if (elapsedTime > 0) {
-                                batteryChangeRate = (batteryPercentage - prevBatteryPercentage) / (elapsedTime / 1000.0);
-                              }
-
-                              // Update previous values for the next iteration
-                              prevBatteryPercentage = batteryPercentage;
-                              prevUpdateTime = currentTime;
-
-                              // Relay control based on battery percentage and time
-                              controlRelays(batteryPercentage, simulatedTime);
-
-                              // Display battery gauge information
-                              Serial.println("Battery Gauge Information:");
-                              Serial.printf("  Battery percentage: %.2f%%\n", batteryPercentage);
-                              Serial.printf("  Battery voltage: %.2fV\n", batteryVoltage);
-                              Serial.printf("  Battery change rate: %.2f%%/s\n", batteryChangeRate);
-
-                              delay(1000);  // Add a delay for better readability in the Serial Monitor
-                            }
-
-                            void updateSimulatedTime() {
-                              simulatedTime = (simulatedTime + 1) % 24;
-
-                              unsigned long twelveHourFormat = simulatedTime % 12;
-                              if (twelveHourFormat == 0) {
-                                twelveHourFormat = 12;
-                              }
-
-                              const char* amPmIndicator = (simulatedTime < 12) ? "AM" : "PM";
-
-                              Serial.printf("Current Simulated Time: %02lu:00 %s\n", twelveHourFormat, amPmIndicator);
-                            }
-
-                            void controlRelays(float batteryPercentage, unsigned long currentTime) {
-                              if (batteryPercentage > 50) {
-                                // Battery higher than 50%, turn off both relays
-                                digitalWrite(RELAY1_PIN, HIGH);
-                                digitalWrite(RELAY2_PIN, HIGH);
-                              } else if (batteryPercentage >= 26 && batteryPercentage <= 50) {
-                                // Battery between 26% and 50%
-                                // Turn on relay 1 if it's not between 9 AM and 5 PM, otherwise, turn on relay 2
-                                if (currentTime < 9 || currentTime >= 17) {
-                                  digitalWrite(RELAY1_PIN, LOW);
-                                  digitalWrite(RELAY2_PIN, HIGH);
-                                  Blynk.logEvent("Shedding Industrial Load");
-                                } else {
-                                  digitalWrite(RELAY1_PIN, HIGH);
-                                  digitalWrite(RELAY2_PIN, LOW);
-                                  Blynk.logEvent("Shedding Residential Load");
-                                }
-                              } else {
-                                // Battery 25% and below, turn on both relays
-                                digitalWrite(RELAY1_PIN, LOW);
-                                digitalWrite(RELAY2_PIN, LOW);
-                                Blynk.logEvent("Maintenance needed: Power ratio is out of range!");
-                              }
-                              Blynk.run();
-                              Blynk.virtualWrite(V0, batteryPercentage);
-                              Blynk.virtualWrite(V1, simulatedTime);
-                              Blynk.virtualWrite(V2, batteryChangeRate);
-                            }
-
-                          </code>
-                      </pre>
-                      <button id="copy-button">Copy</button>
-                    </div>
-                  </div>
-              
-                  <script src="main.js" defer></script>
-                  <script src="prism.js"></script>
-                </body>
-                <h2>10. Interfacing with Blynk 2.0 App</h2>
-                <br>
-                <p>1. Add New Devices and name the template to add a project.</p>
-                <br>
-                
-                <center><img src="gambar/Portfolio/Solar Monitor/add device.png" class="img-fluid" alt=""></center>
-                <br>
-                <p>2. Click Edit Dashboard</p>
-                <br>
-                
-                <center><img src="gambar/Portfolio/Solar Monitor/EDit Dashboard.png" class="img-fluid" alt=""></center>
-                <br><p>3. Add Datastreams based on the V pins from the code</p>
-                <br>
-                
-                <center><img src="gambar/Portfolio/Solar Monitor/Datasreams.png" class="img-fluid" alt=""></center>
-                <br><p>4. Move to Web Dashboard and drag widget to display value. Dont forget to insert the V pin number of the intended output</p>
-                <br>
-                
-                <center><img src="gambar/Portfolio/Solar Monitor/Web Dashboard.png" class="img-fluid" alt=""></center>
-                <br>
-                <br><p>5. You can set up at your mobile devices too by just clicking the "+" button on top right.</p>
-                <br>
-                
-                <center><img src="gambar/Portfolio/Solar Monitor/mobile dhsboard.jpg" class="img-fluid" alt=""></center>
-                <br><br>
-
-                <h2>11. Results</h2>
-                <br>
-                <p>Here is the results</p>
-                <br>
-                
-               
-                <center><img src="gambar/Portfolio/Microgrid/first test.png" class="img-fluid" alt=""></center>
-                <center><i>First Test</i></center>
-                <br><br>
-                <center><img src="gambar/Portfolio/Microgrid/REsultArduino.png" class="img-fluid" alt=""></center>
-                <center><i>Printed Result on Serial Monitor</i></center>
-                <br><br>
-                <center><img src="gambar/Portfolio/Microgrid/REsult Web1.png" class="img-fluid" alt=""></center>
-                <center><i> Web Dashboard Display</i></center>
-                
-                <br><br>
-                <center><img src="gambar/Portfolio/Microgrid/Resultphone.jpg" class="img-fluid" alt=""></center>
-                <center><i>Phone Dashboard Display</i></center>
-                <br><br>
-                <center><img src="gambar/Portfolio/Microgrid/result 1.jpg" class="img-fluid" alt=""></center>
-                <center><i>When Battery is less than 50% during office hour</i></center>
-                <br><br>
-                
-                <center><img src="gambar/Portfolio/Microgrid/result 2.jpg" class="img-fluid" alt=""></center>
-                <center><i>When Battery is less than 50% outside office hour</i></center>
-                <br><br>
-                
-                <center><img src="gambar/Portfolio/Microgrid/result 3.jpg" class="img-fluid" alt=""></center>
-                <center><i>When Battery is less than 25% </i></center>
-                <br><br>
-                
-                
-  
-  
-                
-
-  
+            <h1>Solar PV System Design & Microgrid Power Management</h1>
+            <p style="font-size: 1.2rem; color: var(--color-mist-light); max-width: 600px; line-height: 1.7;">
+              From photovoltaic system simulation using SAM software to developing intelligent load shedding strategies for islanded microgrids — a comprehensive exploration of renewable energy systems.
+            </p>
           </div>
-  
         </div>
-      </section><!-- End Portfolio Details Section -->
-  
-    </main><!-- End #main -->
-  
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-  
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-  
-  </body>
-  
+
+        <div class="project-meta" data-aos="fade-up" data-aos-delay="100">
+          <div class="meta-item">
+            <span class="meta-label">Duration</span>
+            <span class="meta-value">6 Months</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Topics</span>
+            <span class="meta-value">PV Design & Microgrid Control</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Software</span>
+            <span class="meta-value">SAM, MATLAB/Simulink</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Hardware</span>
+            <span class="meta-value">ESP32, Solar, Wind</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Context Section -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">01 — Context</div>
+          <h2>The Future of Distributed Energy</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            As the world transitions toward cleaner energy sources, two technologies stand at the forefront: <strong>Solar Photovoltaic (PV) systems</strong> for distributed generation and <strong>Microgrids</strong> for intelligent power management. This project explores both domains — designing and simulating a complete PV system using industry-standard software, then building a physical microgrid prototype with intelligent load shedding capabilities.
+          </p>
+          <p>
+            The motivation stems from a critical challenge in modern power systems: renewable energy sources are intermittent, and grid stability depends on balancing supply and demand in real-time. Microgrids — localized energy systems that can operate independently from the main grid — offer a solution by integrating renewable generation with smart control strategies.
+          </p>
+          <p>
+            This dual-focus project addresses both the <em>design</em> and <em>management</em> aspects of renewable energy systems, providing hands-on experience with everything from site assessment and financial modeling to embedded systems programming and power electronics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 1: PV System Design -->
+    <section class="story-section" style="background: var(--color-stone-light);">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">Part I</div>
+          <h2>Solar PV System Design & Simulation</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            Using the <strong>System Advisor Model (SAM)</strong> software developed by NREL, I designed a complete photovoltaic system from initial site assessment through financial analysis. SAM provides detailed performance predictions and economic calculations, making it the industry standard for PV system design.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img src="gambar/Portfolio/Microgrid/first test.png" alt="PV System Design">
+            <div class="tech-caption">PV system configuration and component selection in SAM</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/Portfolio/Microgrid/Scgematicss.png" alt="System Schematics">
+            <div class="tech-caption">Electrical schematics showing array configuration and interconnections</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/Portfolio/Microgrid/REsult Web1.png" alt="Performance Results">
+            <div class="tech-caption">Energy yield predictions and performance metrics from simulation</div>
+          </div>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="300">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Key Design Considerations</h4>
+          <p>
+            The design process involved multiple critical decisions: selecting appropriate PV modules and inverters, determining optimal array sizing based on energy requirements, configuring series/parallel string arrangements, and conducting shading analysis. Weather data from typical meteorological year (TMY) datasets provided realistic solar irradiance and temperature profiles.
+          </p>
+          <p>
+            Financial modeling in SAM included capital costs, operation and maintenance expenses, incentive programs, and electricity rate structures. This enabled calculation of key metrics like Levelized Cost of Energy (LCOE), Net Present Value (NPV), and payback period — essential for project feasibility assessment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Part 2: Microgrid Power Management -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">Part II</div>
+          <h2>Microgrid: Power Management Systems</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The second phase focused on developing a <strong>load shedding control system</strong> for an islanded microgrid. When renewable generation cannot meet demand, the system must intelligently interrupt non-essential loads to maintain grid stability and preserve power for critical services like hospitals, emergency services, and financial institutions.
+          </p>
+          <p>
+            Load shedding is a crucial practice for maintaining electrical grid stability — a controlled reduction of power consumption during high demand or disturbances prevents grid instability, equipment damage, and widespread blackouts.
+          </p>
+        </div>
+
+        <div class="insight-box" data-aos="fade-up" data-aos-delay="200">
+          <p>
+            The control strategy prioritizes loads based on criticality: Critical loads (hospitals, emergency services) receive uninterrupted power, Industrial loads are shed during low battery outside business hours, and Residential loads are shed during low battery during peak hours (9 AM — 5 PM).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Components Section -->
+    <section class="story-section" style="background: var(--color-stone-light);">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">03 — Hardware</div>
+          <h2>System Components & Architecture</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The physical microgrid prototype integrates multiple renewable energy sources, energy storage, power conversion electronics, and an intelligent control system built around the ESP32 microcontroller.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="tech-card">
+            <img src="gambar/Portfolio/Microgrid/circuitt.png" alt="Circuit Connections">
+            <div class="tech-caption">Physical circuit connections showing renewable sources and loads</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/Portfolio/Microgrid/result 1.jpg" alt="Hardware Setup">
+            <div class="tech-caption">Complete hardware setup with ESP32, relays, and power converters</div>
+          </div>
+          <div class="tech-card">
+            <img src="gambar/Portfolio/Microgrid/result 2.jpg" alt="Testing">
+            <div class="tech-caption">Load shedding demonstration with indicator bulbs</div>
+          </div>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="300">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Key Components</h4>
+          <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>ESP32 DevKit</strong> — Central microcontroller for data acquisition, decision-making, and relay control</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Solar Panel (12W/6V)</strong> — Primary renewable energy source for daytime generation</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Wind Generator (3-Phase)</strong> — Secondary renewable source providing power alongside solar</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>18650 Battery Bank</strong> — Energy storage for maintaining supply during low generation periods</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>MPPT Solar Charger</strong> — Maximum Power Point Tracking for optimal solar energy harvesting</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Buck/Boost Converters</strong> — DC-DC conversion for voltage matching between components</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Inverter</strong> — DC to AC conversion for powering AC loads</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Relay Switches</strong> — Controlled switches for load shedding implementation</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);"><strong>Battery Gauge (MAX17043)</strong> — State of Charge (SOC) monitoring for control decisions</li>
+          </ul>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="400">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Power Flow</h4>
+          <p>
+            The wind generator produces 3-phase AC which is rectified to DC and stepped down via a buck converter to match the 3.7V battery voltage. Solar power passes through an MPPT charger for optimal charging. The battery stores excess energy and supplies power when renewable generation is insufficient. A boost converter steps voltage up to 12V DC, which the inverter converts to 12V AC for the loads.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Software & Control Section -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">04 — Control Logic</div>
+          <h2>Intelligent Load Shedding Algorithm</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The control algorithm monitors battery State of Charge (SOC) and simulated time to make intelligent shedding decisions. The ESP32 reads battery percentage from the MAX17043 fuel gauge, calculates the rate of change, and controls relays accordingly.
+          </p>
+        </div>
+
+        <div class="image-gallery" data-aos="fade-up" data-aos-delay="200">
+          <div class="image-card">
+            <img src="gambar/Portfolio/Microgrid/REsultArduino.png" alt="Serial Monitor Output">
+            <div class="image-caption">Real-time battery monitoring displayed on serial monitor</div>
+          </div>
+          <div class="image-card">
+            <img src="gambar/Portfolio/Microgrid/REsult Web1.png" alt="Web Dashboard">
+            <div class="image-caption">Blynk web dashboard showing battery percentage and change rate</div>
+          </div>
+        </div>
+
+        <div class="insight-box" data-aos="fade-up" data-aos-delay="300">
+          <p>
+            <strong>Control Strategy:</strong> Above 50% battery — all loads powered. Between 26-50% — time-based shedding: shed industrial loads outside business hours (9 AM-5 PM), shed residential loads during business hours. Below 25% — emergency mode, shed all non-critical loads.
+          </p>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="400">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Remote Monitoring with Blynk 2.0</h4>
+          <p>
+            The system integrates with the Blynk IoT platform for real-time monitoring and alerts. The web dashboard displays battery percentage, change rate, and simulated time, while the mobile app provides notifications when load shedding events occur or when battery levels require maintenance.
+          </p>
+        </div>
+
+        <div class="image-gallery" data-aos="fade-up" data-aos-delay="500">
+          <div class="image-card">
+            <img src="gambar/Portfolio/Microgrid/Resultphone.jpg" alt="Mobile Dashboard">
+            <div class="image-caption">Blynk mobile app displaying real-time battery status</div>
+          </div>
+          <div class="image-card">
+            <img src="gambar/Portfolio/Microgrid/result 3.jpg" alt="Emergency Mode">
+            <div class="image-caption">Emergency mode activated when battery drops below 25%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="story-section" style="background: var(--color-stone-light);">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">05 — Results</div>
+          <h2>Performance & Lessons Learned</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The project successfully demonstrated a complete microgrid power management system with the following outcomes:
+          </p>
+          
+          <ul style="margin-bottom: 2rem; padding-left: 1.5rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Accurate battery State of Charge monitoring with MAX17043 fuel gauge</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Successful implementation of time-based load shedding strategy</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Real-time remote monitoring via Blynk web and mobile dashboards</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Automated alert notifications for maintenance and critical events</li>
+            <li style="margin-bottom: 0.75rem; color: var(--color-slate);">Stable operation of hybrid solar-wind generation system</li>
+          </ul>
+        </div>
+
+        <div class="image-gallery" data-aos="fade-up" data-aos-delay="200">
+          <div class="image-card">
+            <img src="gambar/Portfolio/Microgrid/first test.png" alt="First Test">
+            <div class="image-caption">Initial system testing and calibration</div>
+          </div>
+          <div class="image-card">
+            <img src="gambar/Portfolio/Microgrid/Scgematicss.png" alt="Complete Schematic">
+            <div class="image-caption">Complete system schematic with all component interconnections</div>
+          </div>
+        </div>
+
+        <div class="story-content" data-aos="fade-up" data-aos-delay="300">
+          <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Key Insights</h4>
+          <p>
+            This project reinforced the complexity of integrating renewable energy sources into practical power systems. The intermittent nature of solar and wind requires careful sizing of energy storage and intelligent load management. The load shedding approach — prioritizing critical infrastructure while maintaining grid stability — mirrors real-world utility practices but at a microgrid scale.
+          </p>
+          <p>
+            From the PV design perspective, using professional tools like SAM provided valuable experience with industry-standard workflows for site assessment, performance modeling, and financial analysis. Understanding how weather data, component specifications, and economic factors interact is essential for designing viable renewable energy projects.
+          </p>
+          <p>
+            The embedded systems and IoT integration demonstrated how modern microcontrollers can bridge hardware control with cloud-based monitoring, enabling sophisticated energy management strategies that were previously only available in large-scale utility systems.
+          </p>
+        </div>
+
+        <div class="resume-download" style="margin-top: 2rem;" data-aos="fade-up" data-aos-delay="400">
+          <a href="PV Systems Design.pdf" target="_blank">
+            <i class="bx bx-file"></i> View PV System Design Report
+          </a>
+          <a href="https://github.com/DurraniHakim27" target="_blank" style="margin-left: 1rem; background: transparent; color: var(--color-charcoal); border: 1.5px solid var(--color-charcoal);">
+            <i class="bx bxl-github"></i> View Code on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="story-section section-snow">
+      <div class="container container-narrow">
+        <div class="story-header" data-aos="fade-up">
+          <div class="story-number">06 — Resources</div>
+          <h2>Bill of Materials</h2>
+        </div>
+        
+        <div class="story-content" data-aos="fade-up" data-aos-delay="100">
+          <p>
+            The following components were used in the microgrid prototype:
+          </p>
+        </div>
+
+        <div class="table-responsive" data-aos="fade-up" data-aos-delay="200">
+          <table class="table" style="margin-top: 2rem;">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Component</th>
+                <th>Quantity</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>ESP32 DevKit</td>
+                <td>1</td>
+                <td><a href="https://shp.ee/3zl2mdw" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Solar Panel 12W/6V</td>
+                <td>1</td>
+                <td><a href="https://shp.ee/azrb0qy" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Wind Generator (3 Phase)</td>
+                <td>1</td>
+                <td><a href="https://shp.ee/uaomhck" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>18650 Battery</td>
+                <td>2</td>
+                <td><a href="https://shp.ee/k0qmh1i" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Buck Converter</td>
+                <td>1</td>
+                <td><a href="https://shp.ee/u2uto7m" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>MPPT Solar Charger</td>
+                <td>1</td>
+                <td><a href="https://shp.ee/c7q18ls" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Boost Converter</td>
+                <td>1</td>
+                <td><a href="https://shp.ee/rwue837" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>12V Inverter</td>
+                <td>3</td>
+                <td><a href="https://shp.ee/51h2da4" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>12V Light Bulbs</td>
+                <td>3</td>
+                <td><a href="https://shp.ee/4yuv652" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>AWG16 Wire (Red+Black)</td>
+                <td>1-2 Meter</td>
+                <td><a href="https://shp.ee/81rzkeb" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Relay Switch 3.3V</td>
+                <td>2</td>
+                <td><a href="https://shp.ee/5kafgll" target="_blank">Here</a></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Battery Gauge (MAX17043)</td>
+                <td>1</td>
+                <td><a href="https://shp.ee/ei73gtj" target="_blank">Here</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Navigation -->
+  <section style="background: var(--color-charcoal); padding: 3rem 0; color: var(--color-snow);">
+    <div class="container text-center">
+      <p style="color: var(--color-mist); margin-bottom: 1.5rem;">Continue exploring</p>
+      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+        <a href="index.html#projects" style="color: var(--color-snow); display: flex; align-items: center; gap: 0.5rem;">
+          <i class="bx bx-arrow-left"></i> Back to Projects
+        </a>
+        <a href="portfolio-solar-monitor.html" style="color: var(--color-snow); display: flex; align-items: center; gap: 0.5rem;">
+          Next: Solar Monitor <i class="bx bx-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 
 </html>
